@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Virtual Library - Home page</title>
+</head>
+<body>
+    <div class="header">Virtual Library</div>
+    <div class="add-book-container"><button class="add-button" type="button" id="add-book">Add a Book</button></div>
+    <div class="main-body">
+        <div class="content">
+            <div class="grid-container">
+                
+            </div>
+        </div>
+            <dialog id="book-entry-modal" class ="center">
+                <form action="#" id="book-entry-form">
+                    <div><h2>Enter book details</h2></div>
+                    <div class="form-title-section form-section">
+                        <label for="book-title">Enter the book title</label>
+                        <input type="text" id="book-title" name="book-title">
+                    </div>
+                    <div class="form-author-section form-section">
+                        <label for="book-author">Enter name of the author</label>
+                        <input type="text" id="book-author" name="book-author">
+                    </div>
+                    <div class="form-pages-section form-section">
+                        <label for="book-pages">Enter no. of pages</label>
+                        <input type="tel" id="book-pages" name="book-pages">
+                    </div>
+                    <div class="form-status-section form-section">
+                        <label for="status">I have read the book</label>
+                        <input type="checkbox" name="status" id="status" value="yes">
+                    </div>
+                    <div class="form-buttons-section"><button id="submit-button">Submit</button><button value="cancel" formmethod="dialog">Cancel</button></div>
+                </form>
+            </dialog>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
